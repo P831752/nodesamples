@@ -1,0 +1,25 @@
+###
+POST http://localhost:5000 HTTP/1.1
+Content-Type : application/json
+
+{
+    "Name" : "Venkata Gagan Gamya"
+}
+
+###
+POST http://localhost:5000 HTTP/1.1
+Content-Type : application/json
+
+{
+    "fileID" : "03",
+    "employess":[
+        {
+            "name":"First",
+            "role":"Admin"
+        },
+        {
+            "name":"Second",
+            "role":"Developer"
+        }
+    ]
+}

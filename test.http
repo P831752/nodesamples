@@ -23,3 +23,33 @@ Content-Type : application/json
         }
     ]
 }
+
+###
+GET http://localhost:5000/localProdJSON
+
+###
+GET http://localhost:5000/getNorthwindsrv/
+
+###
+GET http://localhost:5000/getNorthwindsrvAsync/
+
+###
+GET http://localhost:5000/getNorthwindFilters/SupplierID=2
+
+###
+POST http://localhost:5000/localProdJSON
+Content-Type : application/json
+
+{
+      "ProductID": 21,
+      "ProductName": "Teatime Chocolate Biscuits",
+      "SupplierID": 8,
+      "CategoryID": 3,
+      "QuantityPerUnit": "10 boxes x 12 pieces",
+      "UnitPrice": 9.2,
+      "UnitsInStock": 25,
+      "UnitsOnOrder": 0,
+      "ReorderLevel": 5,
+      "Discontinued": false
+    }
+

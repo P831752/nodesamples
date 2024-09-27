@@ -3,7 +3,8 @@ const app = express();
 const PORT = process.env.PORT || 5000 
 const env = require('dotenv')
 const localJSON = require('./data/products.json')
-
+const localProduct = require('./Router/localProduct')
+const nwProduct = require('./Router/nwProduct')
 const{json} = require('express');
 const { default: axios } = require('axios');
 
@@ -13,7 +14,6 @@ const axios_instance = axios.create({
 
 app.use(json())
 app.use(express.urlencoded({extended:false}))
-
 
 app.post('/localProdJSON', (req, res) => {
     const newData = req.body
@@ -82,5 +82,8 @@ app.get('/getNorthwindsrvAsync', async(req, res) => {
         res.status(400)
     }
  })
+
+ app.use('/api/localProducts',localProduct)
+ app.use('/api/nwProducts',nwProduct)
 
 app.listen(5000, () => console.log(`listen port ${PORT} in ${process.env.NODE_ENV} server`));

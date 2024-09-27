@@ -17,6 +17,9 @@ serverExpress.js belongs to @somnathpaul2020 youtube
 3. Read local JSON file from project folder
 4. Write data into existing local JSON data
 5. read oData service from AXIOS
-   5.1 read oData service with specific Entityset
-6. read oData service with Async/Await
-7. oData dynamic filters
+6 read oData service with specific Entityset
+7. read oData service with Async/Await
+8. oData dynamic filters
+
+serverExpress.js with Router Folder --> @somnathpaul2020 youtube
+----------------------------------------------------

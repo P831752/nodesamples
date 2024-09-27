@@ -37,6 +37,11 @@ GET http://localhost:5000/getNorthwindsrvAsync/
 GET http://localhost:5000/getNorthwindFilters/SupplierID=2
 
 ###
+GET http://localhost:5000/api/localProducts/
+
+###
+GET http://localhost:5000/api/nwProducts
+###
 POST http://localhost:5000/localProdJSON
 Content-Type : application/json
 
